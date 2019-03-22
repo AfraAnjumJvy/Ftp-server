@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOderator Profile</title>
+
+	<style>
+	background-color:#0e3f03 ;
+	table {
+  	border-collapse: collapse;
+  	width: 100%;
+		}
+
+		th, td {
+		  padding: 8px;
+		  text-align: left;
+		  font-size: 25px;
+		  border-bottom: 1px solid #ddd;
+		}
+
+		tr:hover {background-color:#99dbb3;}
+
+		#menu{
+	    width: 70%;
+	    height: 100%;
+	    //background-color: antiquewhite;
+	    float: right;
+	    text-align: right;
+	}
+	#menu>ul{
+	    list-style: none;
+	    padding-right: 100px;
+	    padding-top: 20px;
+	}
+	#menu>ul>li{
+	    display: inline-block;
+	    //background-color: aqua;
+	    margin-left: 20px;
+	}
+	#menu>ul>li>a{
+	    text-decoration: none;
+	    color: black;
+	}
+  a:hover {
+    background-color:#99dbb3;
+    border:1px solid black;
+    font-size:25px;
+    display:block;
+}
+
+		</style>
+</head>
+
+<body>
+	<h1>Moderator Profile</h1>
+
+	<div id="menu">
+                <ul>
+	<li><font size="6px"><a href="/moderatorhome">BACK</a></li>
+	<li> <font size="6px"><a href="/logout">LOGOUT</a></li> </ul></div>
+	<br>
+	<br>
+
+	<!-- <table border="1" width="200px" > -->
+		<tr>
+			<font size="6px", color="#0e3f03"><th>ID      : </th><td><%= uList[0].id %></td><br>
+			<th>NAME    : </th><td><%= uList[0].username %></td><br>
+			<th>EMAIL   :</th><td><%= uList[0].email %></td><br>
+			
+			<!-- <th>Action</th> -->
+		</tr>
+
+	
+</body>
+</html>

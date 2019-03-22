@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Member</title>
+
+	<style>
+table, td, th {  
+  border: 2px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Delete Member</h1> 
+
+	<font size="6px"><a href="/adminhome">Back</a> |
+	<a href="/logout">logout</a> </font>
+	<br>
+	<br>
+
+	<table border="0" width="300px" >
+		<tr>
+			<td width="35%">User Name</td>
+			<td width="2%">:</td>
+			<td><%=username%></td>
+		</tr>
+
+		<tr>
+			<td width="35%">Email</td>
+			<td width="2%">:</td>
+			<td><%=email%></td>
+		</tr>
+
+		<tr>
+			<td>Password</td>
+			<td>:</td>
+			<td><%=password%></td>
+		</tr>
+		
+	</table>
+<br>
+<b  style="color:green; font-size:25px;">Are you sure? You want to detete this then click confirm!</b>
+
+<form method="post">
+		<input type="hidden" name="uid" value="<%=id%>">
+		<input type="submit" name="delete" value="Confirm">
+</form>
+
+</body>
+</html>
